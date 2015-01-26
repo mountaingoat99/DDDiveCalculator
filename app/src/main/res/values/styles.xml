@@ -12,6 +12,13 @@
         <item name="colorControlActivated">@color/accent</item>
         <item name="colorControlHighlight">@color/accent</item>
 
+        <!-- Menu Item -->
+        <item name="android:itemTextAppearance">@style/TextAppearance</item>
+
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>
