@@ -294,7 +294,7 @@
                     android:background="@color/primary_light"/>
 
                 <TextView
-                    android:id="@+id/editScore8"
+                    android:id="@+id/totalScore"
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"

@@ -91,6 +91,26 @@
             android:textColor="@color/primary_text"
             android:background="@color/primary_light"/>
 
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="8dp"
+            android:background="@color/primary_light">
+
+            <Button
+                android:id="@+id/buttonOkay"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/okay"
+                android:textSize="@dimen/button_text_medium"
+                android:textColor="@color/primary_dark"
+                style="@android:style/Widget.Holo.Button.Borderless"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
