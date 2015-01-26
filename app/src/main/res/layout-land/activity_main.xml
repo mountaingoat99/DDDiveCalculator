@@ -121,14 +121,11 @@
                     android:nextFocusDown="@+id/editScore3">
                 </EditText>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@color/primary_light" >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/primary_light"/>
 
                 <TextView
                     android:id="@+id/score3"
@@ -153,11 +150,14 @@
                     android:nextFocusDown="@+id/editScore4">
                 </EditText>
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="@color/primary_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/primary_light" >
 
                 <TextView
                     android:id="@+id/score4"
@@ -182,15 +182,11 @@
                     android:nextFocusDown="@+id/editScore5">
                 </EditText>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@color/primary_light">
-
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/primary_light" />
 
                 <TextView
                     android:id="@+id/score5"
@@ -273,7 +269,7 @@
                     android:inputType="numberDecimal"
                     android:hint="@string/score_hint"
                     android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/secondary_text">
+                    android:textColor="@color/secondary_text" >
                 </EditText>
 
                 <View

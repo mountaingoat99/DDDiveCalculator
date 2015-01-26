@@ -4,5 +4,19 @@
     <string name="app_name">DD Dive Calculator</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="dd_header_text">DD Calculator</string>
+    <string name="total">Total:  </string>
+    <string name="fake_score">Score F:</string>
+    <string name="score_7">Score 7:</string>
+    <string name="score_6">Score 6:</string>
+    <string name="score_5">Score 5:</string>
+    <string name="score_4">Score 4:</string>
+    <string name="score_3">Score 3:</string>
+    <string name="score_2">Score 2:</string>
+    <string name="score_1">Score 1:</string>
+    <string name="clear">Clear</string>
+    <string name="score_hint">0.0</string>
+    <string name="degree_of_difficulty">Degree of Difficulty:</string>
+    <string name="total_label">Total</string>
 
 </resources>
