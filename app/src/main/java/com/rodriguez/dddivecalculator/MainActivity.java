@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -51,8 +52,16 @@ public class MainActivity extends ActionBarActivity {
                 getText();
                 if (dd > 0) {
                     if (scores.size() >= 2) {
-                        CalcScore();
-                        scores.clear();
+                        double finalScore = CalcScore();
+                        if (finalScore > 0) {
+                            DecimalFormat df = new DecimalFormat("#.00");
+                            totalView.setVisibility(View.VISIBLE);
+                            totalView.setText(df.format(finalScore));
+
+                        } else {
+                            Toast.makeText(getApplicationContext(),
+                                    "Invalid Score, please try again", Toast.LENGTH_LONG).show();
+                        }
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 "Please enter at least two scores", Toast.LENGTH_LONG).show();
@@ -74,48 +83,68 @@ public class MainActivity extends ActionBarActivity {
 
     private void getText() {
 
+        // lets clear out anything in the old array first
+        scores.clear();
+
         if (ddEnter.getText().length() > 0) {
-            dd = Double.valueOf(ddEnter.getText().toString().trim());
+            dd = Double.parseDouble(ddEnter.getText().toString().trim());
         }
         if (score1.getText().length() > 0) {
-            sc1 = Double.valueOf(score1.getText().toString().trim());
+            sc1 = Double.parseDouble(score1.getText().toString().trim());
             scores.add(sc1);
         }
         if (score2.getText().length() > 0) {
-            sc2 = Double.valueOf(score2.getText().toString().trim());
+            sc2 = Double.parseDouble(score2.getText().toString().trim());
             scores.add(sc2);
         }
         if (score3.getText().length() > 0) {
-            sc3 = Double.valueOf(score3.getText().toString().trim());
+            sc3 = Double.parseDouble(score3.getText().toString().trim());
             scores.add(sc3);
         }
         if (score4.getText().length() > 0) {
-            sc4 = Double.valueOf(score4.getText().toString().trim());
+            sc4 = Double.parseDouble(score4.getText().toString().trim());
             scores.add(sc4);
         }
         if (score5.getText().length() > 0) {
-            sc5 = Double.valueOf(score5.getText().toString().trim());
+            sc5 = Double.parseDouble(score5.getText().toString().trim());
             scores.add(sc5);
         }
         if (score6.getText().length() > 0) {
-            sc6 = Double.valueOf(score6.getText().toString().trim());
+            sc6 = Double.parseDouble(score6.getText().toString().trim());
             scores.add(sc6);
         }
         if (score7.getText().length() > 0) {
-            sc7 = Double.valueOf(score7.getText().toString().trim());
+            sc7 = Double.parseDouble(score7.getText().toString().trim());
             scores.add(sc7);
         }
     }
 
-    private void CalcScore() {
+    private double CalcScore() {
 
+        double finalScore = 0.0;
         //convert the ArrayList for processing
         Double[] theScores = new Double[ scores.size()];
         scores.toArray(theScores);
         Arrays.sort(theScores);
 
-        //
+        if (theScores.length == 2) {
 
+            for (int i = 0; i < theScores.length; i++) {
+                finalScore = finalScore + theScores[i];
+            }
+
+            finalScore = (finalScore * 1.5) * dd;
+
+        } else if (theScores.length == 3) {
+
+        } else if (theScores.length == 5) {
+
+        } else if (theScores.length == 7) {
+
+        } else {
+            finalScore = 0.0;
+        }
+        return finalScore;
     }
 
     private void ClearAll() {
@@ -139,6 +168,7 @@ public class MainActivity extends ActionBarActivity {
         sc7 = 0.0;
         total = 0.0;
         dd = 0.0;
+        ddEnter.requestFocus();
         scores.clear();
     }
 
