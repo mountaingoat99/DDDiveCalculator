@@ -18,5 +18,14 @@
     <string name="score_hint">0.0</string>
     <string name="degree_of_difficulty">Degree of Difficulty:</string>
     <string name="total_label">Total</string>
+    <string name="about">About</string>
+    <string name="contact">Contact SingleCogSoftware:</string>
+    <string name="email_address">jeremey.rodriguez@outlook.com</string>
+    <string name="facebook_label">FaceBook:</string>
+    <string name="facebook_link">facebook.com/singlecogsoftware</string>
+    <string name="more">Looking for More?</string>
+    <string name="score_my_dive">Check out the \'Score My Dive\' App in the Google Play Store
+        if you would like to do more than just
+            calculate the Dive DD.</string>
 
 </resources>

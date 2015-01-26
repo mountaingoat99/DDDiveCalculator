@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/layer_card_background">
+
+        <TextView
+            android:id="@+id/contactLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="@string/contact"
+            android:textSize="@dimen/text_size_mini"
+            android:textColor="@color/primary_text"
+            android:background="@color/primary_light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/email_address"
+            android:textSize="@dimen/text_size_mini"
+            android:textColor="@color/primary_text"
+            android:background="@color/primary_light"/>
+
+        <TextView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="@string/facebook_label"
+            android:textSize="@dimen/text_size_mini"
+            android:textColor="@color/primary_text"
+            android:background="@color/primary_light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/facebookLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/facebook_link"
+            android:textSize="@dimen/text_size_mini"
+            android:textColor="@color/primary_text"
+            android:background="@color/primary_light"/>
+
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="@string/more"
+            android:textSize="@dimen/text_size_mini"
+            android:textColor="@color/primary_text"
+            android:background="@color/primary_light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/otherStuff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/score_my_dive"
+            android:textSize="@dimen/text_size_mini"
+            android:textColor="@color/primary_text"
+            android:background="@color/primary_light"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
