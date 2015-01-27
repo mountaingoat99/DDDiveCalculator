@@ -26,7 +26,7 @@
             android:layout_marginRight="6dp"
             android:text="@string/degree_of_difficulty"
             android:textSize="@dimen/text_size_small"
-            android:textColor="@color/primary_text"
+            android:textColor="@color/secondary_text"
             android:background="@color/primary_light"/>
     
         <EditText
@@ -35,9 +35,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:inputType="numberDecimal"
-            android:hint="@string/score_hint"
             android:textSize="@dimen/text_size_medium"
-            android:textColor="@color/secondary_text"
+            android:textColor="@color/primary_text"
             android:nextFocusDown="@+id/editScore1">
             <requestFocus/>
         </EditText>
@@ -73,7 +72,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/score_1"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:background="@color/primary_light"/>
 
             <EditText
@@ -82,9 +81,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text"
+                android:textColor="@color/primary_text"
                 android:nextFocusDown="@+id/editScore2">
             </EditText>
 
@@ -102,7 +100,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/score_2"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:background="@color/primary_light" />
 
             <EditText
@@ -111,9 +109,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text"
+                android:textColor="@color/primary_text"
                 android:nextFocusDown="@+id/editScore3">
             </EditText>
 
@@ -131,7 +128,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/score_3"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:background="@color/primary_light"/>
 
             <EditText
@@ -140,9 +137,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text"
+                android:textColor="@color/primary_text"
                 android:nextFocusDown="@+id/editScore4">
             </EditText>
 
@@ -163,7 +159,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/score_4"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:background="@color/primary_light" />
 
             <EditText
@@ -172,9 +168,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text"
+                android:textColor="@color/primary_text"
                 android:nextFocusDown="@+id/editScore5">
             </EditText>
 
@@ -192,7 +187,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/score_5"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:background="@color/primary_light" />
 
             <EditText
@@ -201,9 +196,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text"
+                android:textColor="@color/primary_text"
                 android:nextFocusDown="@+id/editScore6">
             </EditText>
 
@@ -221,7 +215,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/score_6"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:background="@color/primary_light" />
 
             <EditText
@@ -230,9 +224,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text"
+                android:textColor="@color/primary_text"
                 android:nextFocusDown="@+id/editScore7">
             </EditText>
 
@@ -254,7 +247,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/score_7"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:background="@color/primary_light" />
 
             <EditText
@@ -263,9 +256,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text" >
+                android:textColor="@color/primary_text" >
             </EditText>
 
             <View
@@ -281,7 +273,7 @@
                 android:layout_marginEnd="6dp"
                 android:text="@string/total"
                 android:textSize="@dimen/text_size_small"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/secondary_text"
                 android:visibility="visible"
                 android:background="@color/primary_light"/>
 
@@ -290,10 +282,9 @@
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:hint="@string/score_hint"
                 android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/secondary_text"
-                android:visibility="visible"
+                android:textColor="@color/primary_text"
+                android:visibility="invisible"
                 android:background="@color/primary_light">
             </TextView>
 

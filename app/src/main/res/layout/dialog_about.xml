@@ -37,7 +37,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginStart="6dp"
             android:text="@string/email_address"
-            android:textSize="@dimen/text_size_mini"
+            android:textSize="@dimen/text_size_very_small"
             android:textColor="@color/primary_text"
             android:background="@color/primary_light"/>
 
@@ -62,7 +62,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginStart="6dp"
             android:text="@string/facebook_link"
-            android:textSize="@dimen/text_size_mini"
+            android:textSize="@dimen/text_size_very_small"
             android:textColor="@color/primary_text"
             android:background="@color/primary_light"/>
 
@@ -87,7 +87,7 @@
             android:layout_marginLeft="6dp"
             android:layout_marginStart="6dp"
             android:text="@string/score_my_dive"
-            android:textSize="@dimen/text_size_mini"
+            android:textSize="@dimen/text_size_very_small"
             android:textColor="@color/primary_text"
             android:background="@color/primary_light"/>
 

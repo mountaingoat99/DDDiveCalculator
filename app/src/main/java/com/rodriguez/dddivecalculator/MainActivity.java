@@ -4,6 +4,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +19,8 @@ import android.widget.Toast;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Pattern;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -24,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
     private EditText score1, score2, score3, score4, score5, score6, score7, ddEnter;
     private Button btnClear, btnCalc;
     private TextView totalView;
-    private double sc1, sc2, sc3, sc4, sc5, sc6, sc7, dd, total;
+    private double sc1, sc2, sc3, sc4, sc5, sc6, sc7, dd;
     private ArrayList<Double> scores = new ArrayList<>();
     private final Context context = this;
 
@@ -51,22 +55,35 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 getText();
                 if (dd > 0) {
+
                     if (scores.size() >= 2) {
+
                         double finalScore = CalcScore();
+
                         if (finalScore > 0) {
+
                             DecimalFormat df = new DecimalFormat("#.00");
                             totalView.setVisibility(View.VISIBLE);
                             totalView.setText(df.format(finalScore));
 
                         } else {
+
+                            totalView.setVisibility(View.INVISIBLE);
+                            totalView.setText("");
                             Toast.makeText(getApplicationContext(),
-                                    "Invalid Score, please try again", Toast.LENGTH_LONG).show();
+                                    "Invalid Score, You have to have either 2, 3, 5, or 7 scores entered", Toast.LENGTH_LONG).show();
                         }
                     } else {
+
+                        totalView.setVisibility(View.INVISIBLE);
+                        totalView.setText("");
                         Toast.makeText(getApplicationContext(),
                                 "Please enter at least two scores", Toast.LENGTH_LONG).show();
                     }
                 } else {
+
+                    totalView.setVisibility(View.INVISIBLE);
+                    totalView.setText("");
                     Toast.makeText(getApplicationContext(),
                             "You have to enter a DD", Toast.LENGTH_LONG).show();
                 }
@@ -137,9 +154,39 @@ public class MainActivity extends ActionBarActivity {
 
         } else if (theScores.length == 3) {
 
+            for (int i = 0; i < theScores.length; i++) {
+                finalScore = finalScore + theScores[i];
+            }
+
+            finalScore = finalScore * dd;
+
         } else if (theScores.length == 5) {
 
+            // converts the sorted array to a list and removes the smallest and largest scores
+            List<Double> list = new ArrayList<>(Arrays.asList(theScores));
+            list.remove(0);
+            list.remove(3);
+
+            for (int i = 0; i < list.size(); i++) {
+                finalScore = finalScore + list.get(i);
+            }
+
+            finalScore = finalScore * dd;
+
         } else if (theScores.length == 7) {
+
+            // converts the sorted array to a list and removes the smallest and largest scores
+            List<Double> list = new ArrayList<>(Arrays.asList(theScores));
+            list.remove(0);
+            list.remove(0);
+            list.remove(4);
+            list.remove(3);
+
+            for (int i = 0; i < list.size(); i++) {
+                finalScore = finalScore + list.get(i);
+            }
+
+            finalScore = finalScore * dd;
 
         } else {
             finalScore = 0.0;
@@ -166,7 +213,6 @@ public class MainActivity extends ActionBarActivity {
         sc5 = 0.0;
         sc6 = 0.0;
         sc7 = 0.0;
-        total = 0.0;
         dd = 0.0;
         ddEnter.requestFocus();
         scores.clear();
