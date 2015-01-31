@@ -2,11 +2,9 @@
 <resources>
 
     <string name="app_name">DD Dive Calculator</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="dd_header_text">DD Calculator</string>
-    <string name="total">Total:  </string>
-    <string name="fake_score">Score F:</string>
+    <string name="total">Total:</string>
     <string name="score_7">Score 7:</string>
     <string name="score_6">Score 6:</string>
     <string name="score_5">Score 5:</string>
@@ -15,7 +13,6 @@
     <string name="score_2">Score 2:</string>
     <string name="score_1">Score 1:</string>
     <string name="clear">Clear</string>
-    <string name="score_hint">0.0</string>
     <string name="degree_of_difficulty">Degree of Difficulty:</string>
     <string name="total_label">Total</string>
     <string name="about">About</string>
@@ -28,5 +25,18 @@
         if you would like to do more than just
             calculate the Dive DD.</string>
     <string name="okay">OK</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="back">Back</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="next">Next</string>
+    <string name="zero">0</string>
+    <string name="period">.</string>
 
 </resources>

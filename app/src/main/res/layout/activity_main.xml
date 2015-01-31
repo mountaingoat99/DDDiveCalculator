@@ -78,7 +78,7 @@
             android:layout_below="@id/layout1"
             android:orientation="vertical"
             android:layout_marginTop="16dp"
-            android:paddingTop="16dp"
+            android:paddingTop="12dp"
             android:paddingBottom="16dp"
             android:paddingLeft="8dp"
             android:paddingStart="8dp"
@@ -86,197 +86,249 @@
             android:paddingEnd="8dp"
             android:background="@drawable/layer_card_background">
 
-            <LinearLayout
+            <TableLayout
                 android:id="@+id/layout3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:background="@color/primary_light">
 
-                <TextView
-                    android:id="@+id/score1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/score_1"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light"/>
-
-                <EditText
-                    android:id="@+id/editScore1"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:nextFocusDown="@+id/editScore2">
-                </EditText>
-
-                <TextView
-                    android:id="@+id/score2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/score_2"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light" />
-
-                <EditText
-                    android:id="@+id/editScore2"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:nextFocusDown="@+id/editScore3">
-                </EditText>
-
-                <TextView
-                    android:id="@+id/score3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/score_3"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light"/>
-
-                <EditText
-                    android:id="@+id/editScore3"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:nextFocusDown="@+id/editScore4">
-                </EditText>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@color/primary_light" >
-
-                <TextView
-                    android:id="@+id/score4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/score_4"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light" />
-
-                <EditText
-                    android:id="@+id/editScore4"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:nextFocusDown="@+id/editScore5">
-                </EditText>
-
-                <TextView
-                    android:id="@+id/score5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/score_5"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light" />
-
-                <EditText
-                    android:id="@+id/editScore5"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:nextFocusDown="@+id/editScore6">
-                </EditText>
-
-                <TextView
-                    android:id="@+id/score6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/score_6"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light" />
-
-                <EditText
-                    android:id="@+id/editScore6"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:nextFocusDown="@+id/editScore7">
-                </EditText>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@color/primary_light">
-
-
-                <TextView
-                    android:id="@+id/score7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:text="@string/score_7"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light" />
-
-                <EditText
-                    android:id="@+id/editScore7"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text">
-                </EditText>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:background="@color/primary_light" />
+                    android:background="@color/primary_light">
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/score1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/score_1"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light"/>
+
+                    <EditText
+                        android:id="@+id/editScore1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:nextFocusDown="@+id/editScore2">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/score2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/score_2"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light" />
+
+                    <EditText
+                        android:id="@+id/editScore2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:nextFocusDown="@+id/editScore3">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/score3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/score_3"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light"/>
+
+                    <EditText
+                        android:id="@+id/editScore3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:nextFocusDown="@+id/editScore4">
+                    </EditText>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/layout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary_light">
+
+                    <TextView
+                        android:id="@+id/score4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/score_4"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light" />
+
+                    <EditText
+                        android:id="@+id/editScore4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:nextFocusDown="@+id/editScore5">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/score5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/score_5"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light" />
+
+                    <EditText
+                        android:id="@+id/editScore5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:nextFocusDown="@+id/editScore6">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/score6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/score_6"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light" />
+
+                    <EditText
+                        android:id="@+id/editScore6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:nextFocusDown="@+id/editScore7">
+                    </EditText>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/layout6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary_light">
+
+                    <TextView
+                        android:id="@+id/score7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/score_7"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light" />
+
+                    <EditText
+                        android:id="@+id/editScore7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/f1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:text="@string/score_7"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light"
+                        android:visibility="invisible"/>
+
+                    <EditText
+                        android:id="@+id/f2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:visibility="invisible">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/f3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".15"
+                        android:text="@string/score_7"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/f4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".7"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:visibility="invisible">
+                    </EditText>
+
+                </TableRow>
+
+            </TableLayout>
 
             <TableLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_below="@id/layout2"
-                android:layout_marginTop="24dp">
+                android:layout_marginTop="16dp">
     
                 <TableRow
                     android:layout_width="wrap_content"
@@ -290,7 +342,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="1"
+                        android:text="@string/one"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -303,7 +355,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="2"
+                        android:text="@string/two"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -316,7 +368,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="3"
+                        android:text="@string/three"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -350,7 +402,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="4"
+                        android:text="@string/four"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -362,7 +414,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="5"
+                        android:text="@string/five"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -374,7 +426,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="6"
+                        android:text="@string/six"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -387,7 +439,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="Back"
+                        android:text="@string/back"
                         android:textSize="@dimen/button_text_medium"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -408,7 +460,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="7"
+                        android:text="@string/seven"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -420,7 +472,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="8"
+                        android:text="@string/eight"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -432,7 +484,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="9"
+                        android:text="@string/nine"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -445,7 +497,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:text="Next"
+                        android:text="@string/next"
                         android:textSize="@dimen/button_text_medium"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -466,7 +518,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight=".25"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
@@ -478,7 +530,7 @@
                         android:layout_height="fill_parent"
                         android:layout_margin="4dp"
                         android:layout_weight=".25"
-                        android:text="."
+                        android:text="@string/period"
                         android:textSize="@dimen/button_text_large"
                         android:textColor="@color/white"
                         android:background="@drawable/layout_selector"
