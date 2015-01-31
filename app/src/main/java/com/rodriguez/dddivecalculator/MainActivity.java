@@ -591,11 +591,11 @@ public class MainActivity extends ActionBarActivity {
         if (!Validation.isDD(ddEnter, true)) ret = false;
         if (!Validation.isScore(score1, true)) ret = false;
         if (!Validation.isScore(score2, true)) ret = false;
-        if (!Validation.isScore(score3, true)) ret = false;
-        if (!Validation.isScore(score4, true)) ret = false;
-        if (!Validation.isScore(score5, true)) ret = false;
-        if (!Validation.isScore(score6, true)) ret = false;
-        if (!Validation.isScore(score7, true)) ret = false;
+        if (!Validation.isScore(score3, false)) ret = false;
+        if (!Validation.isScore(score4, false)) ret = false;
+        if (!Validation.isScore(score5, false)) ret = false;
+        if (!Validation.isScore(score6, false)) ret = false;
+        if (!Validation.isScore(score7, false)) ret = false;
 
         return ret;
     }

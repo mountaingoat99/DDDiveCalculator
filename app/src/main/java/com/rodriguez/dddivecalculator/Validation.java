@@ -11,8 +11,8 @@ public class Validation {
     private static final String EMAIL_REGEX = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
     private static final String PHONE_REGEX = "\\d{3}-\\d{7}";
 
-    private static final String DD_REGEX = "";
-    private static final String SCORE_REGEX = "";
+    private static final String DD_REGEX = "^([1-4]{1}+)?(\\.([0-9]{1})?)?$";
+    private static final String SCORE_REGEX = "^([0-9]|10{1}+)?(\\.([0|5]{1})?)?$";
 
     // Error Messages
     private static final String REQUIRED_MSG = "required";
