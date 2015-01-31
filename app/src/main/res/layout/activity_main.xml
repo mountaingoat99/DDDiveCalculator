@@ -16,18 +16,18 @@
             android:orientation="horizontal"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:paddingRight="16dp"
-            android:paddingEnd="16dp"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
             android:background="@drawable/layer_card_background">
 
             <TextView
                 android:id="@+id/ddText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="6dp"
-                android:layout_marginRight="6dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
                 android:text="@string/degree_of_difficulty"
                 android:textSize="@dimen/text_size_mini"
                 android:textColor="@color/secondary_text"
@@ -35,8 +35,10 @@
 
             <EditText
                 android:id="@+id/ddEnter"
-                android:layout_width="75dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
                 android:gravity="center_horizontal"
                 android:inputType="numberDecimal"
                 android:textSize="@dimen/text_size_small"
@@ -45,21 +47,43 @@
                 <requestFocus/>
             </EditText>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp"
+                android:text="@string/total"
+                android:textSize="@dimen/text_size_mini"
+                android:textColor="@color/secondary_text"
+                android:visibility="visible"
+                android:background="@color/primary_light"/>
+
+            <TextView
+                android:id="@+id/totalScore"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/primary_text"
+                android:visibility="invisible"
+                android:background="@color/primary_light">
+            </TextView>
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout2"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_below="@id/layout1"
             android:orientation="vertical"
             android:layout_marginTop="16dp"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:paddingRight="16dp"
-            android:paddingEnd="16dp"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
             android:background="@drawable/layer_card_background">
 
             <LinearLayout
@@ -72,8 +96,8 @@
                     android:id="@+id/score1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
                     android:text="@string/score_1"
                     android:textSize="@dimen/text_size_mini"
                     android:textColor="@color/secondary_text"
@@ -81,7 +105,7 @@
 
                 <EditText
                     android:id="@+id/editScore1"
-                    android:layout_width="75dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:inputType="numberDecimal"
@@ -90,18 +114,12 @@
                     android:nextFocusDown="@+id/editScore2">
                 </EditText>
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="@color/primary_light"/>
-
                 <TextView
                     android:id="@+id/score2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
                     android:text="@string/score_2"
                     android:textSize="@dimen/text_size_mini"
                     android:textColor="@color/secondary_text"
@@ -109,13 +127,35 @@
 
                 <EditText
                     android:id="@+id/editScore2"
-                    android:layout_width="75dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:inputType="numberDecimal"
                     android:textSize="@dimen/text_size_small"
                     android:textColor="@color/primary_text"
                     android:nextFocusDown="@+id/editScore3">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/score3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/score_3"
+                    android:textSize="@dimen/text_size_mini"
+                    android:textColor="@color/secondary_text"
+                    android:background="@color/primary_light"/>
+
+                <EditText
+                    android:id="@+id/editScore3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/primary_text"
+                    android:nextFocusDown="@+id/editScore4">
                 </EditText>
 
             </LinearLayout>
@@ -128,39 +168,11 @@
                 android:background="@color/primary_light" >
 
                 <TextView
-                    android:id="@+id/score3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
-                    android:text="@string/score_3"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:background="@color/primary_light"/>
-
-                <EditText
-                    android:id="@+id/editScore3"
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:nextFocusDown="@+id/editScore4">
-                </EditText>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="@color/primary_light" />
-
-                <TextView
                     android:id="@+id/score4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
                     android:text="@string/score_4"
                     android:textSize="@dimen/text_size_mini"
                     android:textColor="@color/secondary_text"
@@ -168,7 +180,7 @@
 
                 <EditText
                     android:id="@+id/editScore4"
-                    android:layout_width="75dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:inputType="numberDecimal"
@@ -177,22 +189,12 @@
                     android:nextFocusDown="@+id/editScore5">
                 </EditText>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@color/primary_light">
-
-
                 <TextView
                     android:id="@+id/score5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
                     android:text="@string/score_5"
                     android:textSize="@dimen/text_size_mini"
                     android:textColor="@color/secondary_text"
@@ -200,7 +202,7 @@
 
                 <EditText
                     android:id="@+id/editScore5"
-                    android:layout_width="75dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:inputType="numberDecimal"
@@ -209,18 +211,12 @@
                     android:nextFocusDown="@+id/editScore6">
                 </EditText>
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="@color/primary_light" />
-
                 <TextView
                     android:id="@+id/score6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
                     android:text="@string/score_6"
                     android:textSize="@dimen/text_size_mini"
                     android:textColor="@color/secondary_text"
@@ -228,7 +224,7 @@
 
                 <EditText
                     android:id="@+id/editScore6"
-                    android:layout_width="75dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:inputType="numberDecimal"
@@ -251,8 +247,8 @@
                     android:id="@+id/score7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
                     android:text="@string/score_7"
                     android:textSize="@dimen/text_size_mini"
                     android:textColor="@color/secondary_text"
@@ -260,7 +256,7 @@
 
                 <EditText
                     android:id="@+id/editScore7"
-                    android:layout_width="75dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:inputType="numberDecimal"
@@ -274,61 +270,238 @@
                     android:layout_weight="1"
                     android:background="@color/primary_light" />
 
-                <TextView
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/layout2"
+                android:layout_marginTop="24dp">
+    
+                <TableRow
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginEnd="6dp"
-                    android:text="@string/total"
-                    android:textSize="@dimen/text_size_mini"
-                    android:textColor="@color/secondary_text"
-                    android:visibility="visible"
-                    android:background="@color/primary_light"/>
-
-                <TextView
-                    android:id="@+id/totalScore"
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:textSize="@dimen/text_size_small"
-                    android:textColor="@color/primary_text"
-                    android:visibility="invisible"
+                    android:layout_weight="1"
                     android:background="@color/primary_light">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout7"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:layout_marginTop="8dp"
-                android:background="@color/primary_light">
-
-                <Button
-                    android:id="@+id/buttonClear"
-                    android:layout_width="80dp"
-                    android:layout_height="48dp"
-                    android:gravity="center"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="@string/clear"
-                    android:textSize="@dimen/button_text_medium"
-                    android:textColor="@color/primary_dark"
-                    style="@android:style/Widget.Holo.Button.Borderless"/>
-
-                <Button
-                    android:id="@+id/buttonScore"
-                    android:layout_width="80dp"
-                    android:layout_height="48dp"
-                    android:gravity="center"
-                    android:text="@string/total_label"
-                    android:textSize="@dimen/button_text_medium"
-                    android:textColor="@color/primary_dark"
-                    style="@android:style/Widget.Holo.Button.Borderless"/>
-
-            </LinearLayout>
+    
+                    <Button
+                        android:id="@+id/buttonOne"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                    <Button
+                        android:id="@+id/buttonTwo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="2"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                    <Button
+                        android:id="@+id/buttonThree"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                    <Button
+                        android:id="@+id/buttonClear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="@string/clear"
+                        android:textSize="@dimen/button_text_medium"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                </TableRow>
+    
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/primary_light">
+    
+                    <Button
+                        android:id="@+id/buttonFour"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="4"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+                    <Button
+                        android:id="@+id/buttonFive"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="5"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+                    <Button
+                        android:id="@+id/buttonSix"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="6"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                    <Button
+                        android:id="@+id/buttonBack"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="Back"
+                        android:textSize="@dimen/button_text_medium"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                </TableRow>
+    
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/primary_light">
+    
+                    <Button
+                        android:id="@+id/buttonSeven"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="7"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+                    <Button
+                        android:id="@+id/buttonEight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="8"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+                    <Button
+                        android:id="@+id/buttonNine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="9"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                    <Button
+                        android:id="@+id/buttonNext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:text="Next"
+                        android:textSize="@dimen/button_text_medium"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                </TableRow>
+    
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/primary_light">
+    
+                    <Button
+                        android:id="@+id/buttonZero"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight=".25"
+                        android:text="0"
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+                    <Button
+                        android:id="@+id/buttonPeriod"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight=".25"
+                        android:text="."
+                        android:textSize="@dimen/button_text_large"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:clickable="true" />
+    
+                    <Button
+                        android:id="@+id/buttonScore"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight=".50"
+                        android:text="@string/total_label"
+                        android:textSize="@dimen/button_text_medium"
+                        android:textColor="@color/white"
+                        android:background="@drawable/layout_selector"
+                        style="@android:style/Widget.Holo.Button"
+                        android:layout_span="2"
+                        android:clickable="true" />
+    
+                </TableRow>
+    
+            </TableLayout>
 
         </LinearLayout>
 
