@@ -43,7 +43,8 @@
                 android:inputType="numberDecimal"
                 android:textSize="@dimen/text_size_small"
                 android:textColor="@color/primary_text"
-                android:nextFocusDown="@+id/editScore1">
+                android:nextFocusDown="@+id/editScore1"
+                android:focusableInTouchMode="true">
                 <requestFocus/>
             </EditText>
 
@@ -118,7 +119,8 @@
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
                         android:textColor="@color/primary_text"
-                        android:nextFocusDown="@+id/editScore2">
+                        android:nextFocusDown="@+id/editScore2"
+                        android:focusableInTouchMode="true">
                     </EditText>
 
                     <TextView
