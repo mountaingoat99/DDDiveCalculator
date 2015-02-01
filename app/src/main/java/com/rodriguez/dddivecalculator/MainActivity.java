@@ -500,7 +500,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                Validation.isScore(score3, true);
+                Validation.isScore(score3, false);
             }
         });
 
@@ -520,7 +520,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                Validation.isScore(score4, true);
+                Validation.isScore(score4, false);
             }
         });
 
@@ -540,7 +540,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                Validation.isScore(score5, true);
+                Validation.isScore(score5, false);
             }
         });
 
@@ -560,7 +560,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                Validation.isScore(score6, true);
+                Validation.isScore(score6, false);
             }
         });
 
@@ -580,7 +580,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                Validation.isScore(score7, true);
+                Validation.isScore(score7, false);
             }
         });
     }
@@ -591,11 +591,11 @@ public class MainActivity extends ActionBarActivity {
         if (!Validation.isDD(ddEnter, true)) ret = false;
         if (!Validation.isScore(score1, true)) ret = false;
         if (!Validation.isScore(score2, true)) ret = false;
-        if (!Validation.isScore(score3, false)) ret = false;
-        if (!Validation.isScore(score4, false)) ret = false;
-        if (!Validation.isScore(score5, false)) ret = false;
-        if (!Validation.isScore(score6, false)) ret = false;
-        if (!Validation.isScore(score7, false)) ret = false;
+        if (!Validation.isScore(score3, true)) ret = false;
+        if (!Validation.isScore(score4, true)) ret = false;
+        if (!Validation.isScore(score5, true)) ret = false;
+        if (!Validation.isScore(score6, true)) ret = false;
+        if (!Validation.isScore(score7, true)) ret = false;
 
         return ret;
     }

@@ -79,7 +79,7 @@
             android:layout_below="@id/layout1"
             android:orientation="vertical"
             android:layout_marginTop="16dp"
-            android:paddingTop="12dp"
+            android:paddingTop="8dp"
             android:paddingBottom="16dp"
             android:paddingLeft="8dp"
             android:paddingStart="8dp"
@@ -103,7 +103,7 @@
                         android:id="@+id/score1"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:gravity="center"
                         android:text="@string/score_1"
                         android:textSize="@dimen/text_size_mini"
@@ -114,7 +114,7 @@
                         android:id="@+id/editScore1"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
@@ -127,7 +127,7 @@
                         android:id="@+id/score2"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:gravity="center"
                         android:text="@string/score_2"
                         android:textSize="@dimen/text_size_mini"
@@ -138,7 +138,7 @@
                         android:id="@+id/editScore2"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
@@ -150,7 +150,7 @@
                         android:id="@+id/score3"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:gravity="center"
                         android:text="@string/score_3"
                         android:textSize="@dimen/text_size_mini"
@@ -161,7 +161,7 @@
                         android:id="@+id/editScore3"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
@@ -183,7 +183,7 @@
                         android:id="@+id/score4"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:gravity="center"
                         android:text="@string/score_4"
                         android:textSize="@dimen/text_size_mini"
@@ -194,7 +194,7 @@
                         android:id="@+id/editScore4"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
@@ -206,7 +206,7 @@
                         android:id="@+id/score5"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:gravity="center"
                         android:text="@string/score_5"
                         android:textSize="@dimen/text_size_mini"
@@ -217,7 +217,7 @@
                         android:id="@+id/editScore5"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
@@ -229,7 +229,7 @@
                         android:id="@+id/score6"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:gravity="center"
                         android:text="@string/score_6"
                         android:textSize="@dimen/text_size_mini"
@@ -240,7 +240,7 @@
                         android:id="@+id/editScore6"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
@@ -255,13 +255,14 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_marginTop="8dp"
+                    android:layout_weight="1"
                     android:background="@color/primary_light">
 
                     <TextView
                         android:id="@+id/score7"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:gravity="center"
                         android:text="@string/score_7"
                         android:textSize="@dimen/text_size_mini"
@@ -272,7 +273,7 @@
                         android:id="@+id/editScore7"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
@@ -283,7 +284,7 @@
                         android:id="@+id/f1"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:text="@string/score_7"
                         android:textSize="@dimen/text_size_mini"
                         android:textColor="@color/secondary_text"
@@ -294,7 +295,7 @@
                         android:id="@+id/f2"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/text_size_small"
                         android:textColor="@color/primary_text"
@@ -305,7 +306,7 @@
                         android:id="@+id/f3"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".15"
+                        android:layout_weight=".16"
                         android:text="@string/score_7"
                         android:textSize="@dimen/text_size_mini"
                         android:textColor="@color/secondary_text"
@@ -316,8 +317,89 @@
                         android:id="@+id/f4"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight=".7"
+                        android:layout_weight="1"
                         android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:visibility="invisible">
+                    </EditText>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fake1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary_light">
+
+                    <TextView
+                        android:id="@+id/fake2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".16"
+                        android:gravity="center"
+                        android:text="@string/score_7"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light"
+                        android:visibility="invisible"/>
+
+                    <EditText
+                        android:id="@+id/fake3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="@string/fake_score"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:visibility="invisible">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/fake4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".16"
+                        android:text="@string/score_7"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light"
+                        android:visibility="invisible"/>
+
+                    <EditText
+                        android:id="@+id/fake5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:text="@string/fake_score"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/primary_text"
+                        android:visibility="invisible">
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/fake6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".16"
+                        android:text="@string/score_7"
+                        android:textSize="@dimen/text_size_mini"
+                        android:textColor="@color/secondary_text"
+                        android:background="@color/primary_light"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/fake7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:text="@string/fake_score"
                         android:textSize="@dimen/text_size_small"
                         android:textColor="@color/primary_text"
                         android:visibility="invisible">
@@ -329,8 +411,7 @@
 
             <TableLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginTop="16dp">
+                android:layout_height="fill_parent">
     
                 <TableRow
                     android:layout_width="wrap_content"
